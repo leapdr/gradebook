@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/aron/Projects/CSharp_Solutions/gradebook/src/GradeBook/GradeBook.csproj",
+      "projectUniqueName": "/home/aron/Projects/CSharpSolutions/gradebook/src/GradeBook/GradeBook.csproj",
       "projectName": "GradeBook",
-      "projectPath": "/home/aron/Projects/CSharp_Solutions/gradebook/src/GradeBook/GradeBook.csproj",
+      "projectPath": "/home/aron/Projects/CSharpSolutions/gradebook/src/GradeBook/GradeBook.csproj",
       "packagesPath": "/home/aron/.nuget/packages/",
-      "outputPath": "/home/aron/Projects/CSharp_Solutions/gradebook/src/GradeBook/obj/",
+      "outputPath": "/home/aron/Projects/CSharpSolutions/gradebook/src/GradeBook/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/aron/.nuget/NuGet/NuGet.Config"
@@ -56,7 +56,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
       }
     }
   }

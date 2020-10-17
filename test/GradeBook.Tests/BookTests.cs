@@ -20,7 +20,7 @@ namespace GradeBook.Tests
             var result = log("Hello!");
             // invokes ReturnMessage 2 times and IncrementCount 1 time
 
-            Assert.Equal("Hello!", result);
+            Assert.Equal("hello!", result);
         }
 
         string IncrementCount(string message)

@@ -52,15 +52,37 @@ namespace GradeBook
 
         public override bool AddGrade(double grade)
         {
-            var bookFile = File.AppendText($"{Name}.txt");
-            bookFile.WriteLine(grade);
+            using(var writer = File.AppendText($"{Name}.txt")){
+                writer.WriteLine(grade);
+
+                if(GradeAdded != null)
+                {
+                    GradeAdded(this, new EventArgs());
+                }
+            } // guarantees that Disclose method is called
 
             return true;
         }
 
         public override Statistics GetStatistics()
         {
-            throw new NotImplementedException();
+            var stats = new Statistics();
+            using(var reader = File.OpenText($"{Name}.txt"))
+            {
+                string line;
+                while( (line = reader.ReadLine()) != null )
+                {
+                    stats.AddGrade(double.Parse(line));
+                }
+                // var line = reader.ReadLine();
+                // while(line != null)
+                // {
+                //     stats.AddGrade(double.Parse(line));
+                //     line = reader.ReadLine();
+                // }
+            }
+
+            return stats;
         }
     }
 
@@ -96,40 +118,13 @@ namespace GradeBook
 
         public override Statistics GetStatistics()
         {
-            var result = new Statistics();
-            result.Average = 0.0;
-            result.High = double.MinValue;
-            result.Low = double.MaxValue;
-
+            var stats = new Statistics();
+            
             foreach(var grade in Grades){
-                result.High = Math.Max(result.High, grade);
-                result.Low = Math.Min(result.Low, grade);
-                
-                result.Average += grade;
+                stats.AddGrade(grade);
             }
 
-            result.Average = result.Average / Grades.Count;
-
-            switch(result.Average)
-            {
-                case var d when d >= 90:
-                    result.GradeLetter = "A";
-                    break;
-                case var d when d >= 80:
-                    result.GradeLetter = "B";
-                    break;
-                case var d when d >= 70:
-                    result.GradeLetter = "C";
-                    break;
-                case var d when d >= 60:
-                    result.GradeLetter = "D";
-                    break;
-                default:
-                    result.GradeLetter = "F";
-                    break;
-            }
-
-            return result;
+            return stats;
         }
     }
 }

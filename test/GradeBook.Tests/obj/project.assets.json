@@ -3526,11 +3526,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/aron/Projects/CSharp_Solutions/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj",
+      "projectUniqueName": "/home/aron/Projects/CSharpSolutions/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj",
       "projectName": "GradeBook.Tests",
-      "projectPath": "/home/aron/Projects/CSharp_Solutions/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj",
+      "projectPath": "/home/aron/Projects/CSharpSolutions/gradebook/test/GradeBook.Tests/GradeBook.Tests.csproj",
       "packagesPath": "/home/aron/.nuget/packages/",
-      "outputPath": "/home/aron/Projects/CSharp_Solutions/gradebook/test/GradeBook.Tests/obj/",
+      "outputPath": "/home/aron/Projects/CSharpSolutions/gradebook/test/GradeBook.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/aron/.nuget/NuGet/NuGet.Config"
@@ -3544,8 +3544,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/home/aron/Projects/CSharp_Solutions/gradebook/src/GradeBook/GradeBook.csproj": {
-              "projectPath": "/home/aron/Projects/CSharp_Solutions/gradebook/src/GradeBook/GradeBook.csproj"
+            "/home/aron/Projects/CSharpSolutions/gradebook/src/GradeBook/GradeBook.csproj": {
+              "projectPath": "/home/aron/Projects/CSharpSolutions/gradebook/src/GradeBook/GradeBook.csproj"
             }
           }
         }
@@ -3591,7 +3591,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
       }
     }
   }
